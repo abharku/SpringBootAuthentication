@@ -13,14 +13,21 @@ git clone git@github.com:abharku/SpringBootAuthentication.git
 Update SpringBootAuthentication/src/main/resources/application.properties from cloud sql instance you have created
 
 spring.cloud.gcp.sql.instance-connection-name. 
+
 spring.cloud.gcp.sql.database-name. 
+
 spring.datasource.username. 
+
 spring.datasource.password  
+
+
 
 Replace following properties in pom.xml in appengine-maven-plugin section
 
 <projectId>project-id</projectId>. 
+
  <cloudSdkPath>GCLOUD_SDK_PATH</cloudSdkPath>. 
+ 
 
  How to setup GCP CLOUD SDK is explained at https://cloud.google.com/sdk/docs/install
 
