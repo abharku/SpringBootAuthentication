@@ -12,21 +12,21 @@ git clone git@github.com:abharku/SpringBootAuthentication.git
 
 Update SpringBootAuthentication/src/main/resources/application.properties from cloud sql instance you have created
 
-spring.cloud.gcp.sql.instance-connection-name. 
+# spring.cloud.gcp.sql.instance-connection-name. 
 
-spring.cloud.gcp.sql.database-name. 
+# spring.cloud.gcp.sql.database-name. 
 
-spring.datasource.username. 
+# spring.datasource.username. 
 
-spring.datasource.password  
+# spring.datasource.password  
 
 
 
 Replace following properties in pom.xml in appengine-maven-plugin section
 
-<projectId>project-id</projectId>. 
+#  project-id 
 
- <cloudSdkPath>GCLOUD_SDK_PATH</cloudSdkPath>. 
+ # GCLOUD_SDK_PATH 
  
 
  How to setup GCP CLOUD SDK is explained at https://cloud.google.com/sdk/docs/install
@@ -41,7 +41,9 @@ Replace following properties in pom.xml in appengine-maven-plugin section
 
 Use the token received from signin/Signup method and click the Authorize button on Swagger-ui
 
-In the text box add "Bearer <token>". 
+In the text box add 
+
+# Bearer token (Replace token with token received)
 
 After this you will be able to access get api/v1/users/{int} method which is the only method secured by auth header
 
